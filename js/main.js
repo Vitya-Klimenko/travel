@@ -65,6 +65,7 @@
             each.addEventListener('click', function () {
                 const currentTarget = this.getAttribute('href');
                 smoothScroll(currentTarget, 1000);
+                menu.classList.remove('header_nav_active');
             });
         });
     };
